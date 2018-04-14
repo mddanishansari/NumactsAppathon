@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tool="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <View
+                android:id="@+id/toolbar_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/toolbar_shadow"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <LinearLayout
+                    android:id="@+id/triviaLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/triviaSearchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="16dp"
+                        android:inputType="numberSigned"
+                        app:defaultQueryHint="Enter any number (eg. 12)"
+                        app:iconifiedByDefault="false"
+                        app:searchIcon="@drawable/ic_search"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mathLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/mathSearchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="16dp"
+                        android:inputType="numberSigned"
+                        app:defaultQueryHint="Enter any number (eg. 12)"
+                        app:iconifiedByDefault="false"
+                        app:searchIcon="@drawable/ic_search"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/yearType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/ad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="AD"
+                            android:textSize="20sp"/>
+
+                        <RadioButton
+                            android:id="@+id/bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="BC"
+                            android:textSize="20sp"/>
+                    </RadioGroup>
+
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/yearSearchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="16dp"
+                        android:inputType="number"
+                        app:defaultQueryHint="Enter any year (eg. 1995)"
+                        app:iconifiedByDefault="false"
+                        app:searchIcon="@drawable/ic_search"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="DD"
+                                android:textSize="20sp"/>
+
+                            <NumberPicker
+                                android:id="@+id/npDD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="150dp"
+                                android:descendantFocusability="blocksDescendants"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="MM"
+                                android:textSize="20sp"/>
+
+                            <NumberPicker
+                                android:id="@+id/npMM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="150dp"
+                                android:descendantFocusability="blocksDescendants"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="getDateFact"
+                        android:text="submit"/>
+                </LinearLayout>
+
+                <com.robinhood.ticker.TickerView
+                    android:id="@+id/resultNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:textSize="24sp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/resultText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_share"
+            app:fabSize="normal"/>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

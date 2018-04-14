@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Numacts</string>
+
+    <string name="trivia">Trivia</string>
+    <string name="math">Math</string>
+    <string name="date">Date</string>
+    <string name="year">Year</string>
+
+    <string name="button_click_info">Click on any of the above buttons to get the facts.</string>
+    <string name="test_text">Click on any of the above buttons to get the facts. Click on any of the above buttons to get the facts. Click on any of the above buttons to get the facts. Click on any of the above buttons to get the facts. Click on any of the above buttons to get the facts.</string>
+    <string name="quest_facts">Quest Facts</string>
+    <string name="random_facts">Random Facts</string>
+    <string name="this_day_that_year">This Day That Year</string>
+    <string-array name="month_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="prefs_theme_key">theme</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="no_internet_connection">No internet connection found</string>
+    <string name="history">History</string>
+
+    <string name="please_try_different_number">Please try different number</string>
+    <string name="delete">DELETE</string>
+    <string name="range">Range</string>
+    <string name="series">Series</string>
+    <string name="bookmark">Bookmarked Facts</string>
+
+
+</resources>
