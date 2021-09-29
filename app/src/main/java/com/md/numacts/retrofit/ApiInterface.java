@@ -34,6 +34,6 @@ public interface ApiInterface
     Call<FactResponse> getFactInRange(@Query("min") int min, @Query("max") int max);
 
     @GET("{firstNumber}..{secondNumber}?json")
-    Call<HashMap<String,FactResponse>> getSeriesFact(@Path("firstNumber") int firstNumber, @Path("secondNumber") int secondNumber);
+    Call<HashMap<String,String>> getSeriesFact(@Path("firstNumber") int firstNumber, @Path("secondNumber") int secondNumber);
 
 }

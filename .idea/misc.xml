@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Danish/AndroidStudioProjects/NumactsAppathon/app/src/main/res/layout/activity_series.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Danish/AndroidStudioProjects/NumactsAppathon/app/src/main/res/layout/item_history_quest.xml" value="0.17798913043478262" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
