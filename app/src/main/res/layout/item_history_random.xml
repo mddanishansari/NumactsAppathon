@@ -43,7 +43,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 android:textSize="20dp"
                 tool:text="1995 BC"/>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvFact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

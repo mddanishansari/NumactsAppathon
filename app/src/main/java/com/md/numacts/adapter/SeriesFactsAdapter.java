@@ -1,17 +1,14 @@
 package com.md.numacts.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.md.numacts.R;
 import com.md.numacts.data.FactResponse;
-import com.md.numacts.data.HistoryData;
 
 import java.util.List;
 

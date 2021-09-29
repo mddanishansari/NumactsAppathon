@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:context="com.md.numacts.fragment.QuestHistoryFragment">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/questFactsRV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
